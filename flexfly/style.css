@@ -1,0 +1,669 @@
+
+.body{
+padding: -10px;
+background-image: url('disadvantages-of-travelling-by-plane.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50rem;
+  margin: 0;
+}
+#logo{
+border-radius: 50%;
+/*  background: aqua;*/
+  width: 6rem;
+  height: 6rem;
+}
+header{
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  margin-right: 0;
+  align-content: center;
+/*  margin: 20px;*/
+}
+.right-header{
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 50%;
+  margin-left: auto;
+  font-family: sans-serif;
+}
+
+
+li{
+  text-decoration: none;
+  padding: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  color:white;
+  font-family: Trirong;
+  list-style: none;
+}
+
+
+ li:hover{
+
+  color:#083449;
+  cursor: pointer;
+  transition: 1s ease;
+  border-radius: 30px;
+}
+.hook{
+  display: block;
+  font-size: 60px;
+  margin-top: 150px;
+  margin-left: 100px ;
+  color:#083449;
+}
+#hook-sub{
+/*  display: block;*/
+  font-size: 20px;
+  margin-top: -50px;
+  margin-left: 60px;
+  color:#083449;
+}
+.book-now{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 60px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: white;
+}
+.book-now:hover{
+  background-color: #083449;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+  border-color: #083449;
+}
+.booking-div{
+  display: flex;
+  width:96%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  align-content: stretch;
+  height: 100px;  
+  margin: 15px 40px 0 20px;
+  box-shadow: 2px 2px 4px rgba(45,43,43,0.6);
+  /*  border-radius: 20px;*/
+  background-color: white;
+
+}
+/*
+.booking-total{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+}
+*/
+.booking{
+  display: flex;
+  padding: 0;
+  width: 100% ;
+  height: 50px;
+  background-color: none;
+  font-family:Trirong;
+  font-weight: 700;
+  border-style: none;
+  margin: 10px;
+}
+.booking:hover{
+  color: #083449;
+}
+
+</div>
+ search{
+  display: flex;
+  margin-left: auto;
+  color: black;
+}
+.about{
+  margin-top: 220px;
+  text-align: center;
+  color: #083449;
+  width: 100%;
+  font-size: 40px;
+  position: relative;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  transition: 0.5s ease-out;
+}
+.about:hover{
+ color: black;
+  cursor: pointer;
+}
+.about:hover::before{
+   left: 0;
+  right: 0;
+}
+.how{
+  background-color: white;
+  color: black;
+  margin: 50px 0 0 0 ;
+  margin-left: 50% ;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  box-shadow: 2px 2px 4px rgba(45,43,43,0.6);
+}
+.how-it-works{
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  background-color: floralwhite;
+}
+.how-it-works-img{
+  display: flex;
+  width: 50%;
+  height: 10%;
+  margin: 20px 0 0 120px;
+}
+.how-img{
+  width: 30%;
+  margin: 20px 0 0 20px;
+  height: 60%;
+}
+#How-is-this-possible{
+  color: #083449;
+  margin-left: 10px;
+  font-size: 25px;
+  font-family: popping;
+/*  font-weight: bolder;*/ 
+}
+#we-bring{
+  color: black;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: popping;
+  margin: 0 0 0 10px;
+}
+#text{
+  color: darkslategray;
+  font-size: 20px;
+  margin: 0 0 0 10px;
+  font-family: popping;
+  line-height: 35px;
+  font-weight: 500;
+}
+.icon{
+
+  padding: 20px;
+  display: flex;
+  color: #083449;
+  align-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  transition: font-size 0.3s, color 0.3s;
+}
+/*
+.ab-features:hover .icon,
+.ab-features:hover .write-up {
+  font-size: 32px;
+  color: #083449; 
+  transform: scale(1.1); 
+}
+*/
+
+.write-up{
+  display: flex;
+  flex-direction: column;
+}
+.ab-features{
+display: flex;
+  margin-left: 10px; 
+  transition: font-size 0.3s, color 0.3s;
+  background-color: white;
+}
+.ab-wrap{
+display: flex;
+margin-top: 60px;
+}
+
+  
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.dest-card {
+  position: relative; /* Enable relative positioning for text element */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.6s ease-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.dest-card img {
+  width: 100%; /* Images take full width of the card */
+  height: 100%; /* Images take full height of the card */
+  object-fit: cover; /* Ensures image covers the entire card area */
+  transition: 0.3s ease-out;
+}
+.dest-card:hover{
+transform: scale(1.1);
+  cursor: pointer;
+}
+
+.dest-card-text {
+  position: absolute; /* Make text element positioned absolutely */
+  top: 50%; /* Vertical centering at 50% */
+  left: 50%; /* Horizontal centering at 50% */
+  transform: translate(-50%, -50%); /* Account for negative margins */
+  text-align: center; /* Center text within the card */
+  color: white; /* Assuming you want white text over the image */
+}
+
+.dest-text {
+  margin-bottom: 15px;
+}
+.dest-text-big{
+margin-top: -10px;
+}
+#news-feed-img{
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+/*  position: fixed;*/
+}
+.news-feed-card{
+  background-image: url(austrian-1200x853.jpg);
+  height: 100%;
+  margin-top: 7%;
+  background-position: center;
+  display: flex;
+  background-size: cover;
+  padding: 20px;
+}
+#news-mega{
+font-size: 30px;
+  color: #083449;
+  margin: 0;
+}
+#news-percent{
+font-size: 40px;
+  color: #083449;
+  font-family: Trirong;
+}
+.news-check{
+  color: #083449;
+  font-size: 20px;
+  width: 600px;
+}
+.news-sing-up{
+display: flex;
+  flex: 1;
+  width: 50%;
+  margin-top: 70px;
+  flex-direction: column;
+  align-items: center;
+}
+.news-feed-text{
+display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 50%;
+}
+.fotter-details{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 20px;
+  align-items: center;
+  line-height: 24px;
+  flex-wrap: wrap;
+  color: white;
+/*  background-color: violet;*/
+  
+}
+footer{
+  background-color: #083449;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.fotter-link{
+  color: white;
+  margin-bottom: 20px;
+  font-style: none;
+  margin-top: 20px;
+  display: flex;
+  transition: 0.3s ease-out 0.3s;
+}
+.fotter-link:hover{
+  color: navajowhite;
+  font-style: none;
+}
+.follow{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+}
+
+/*signin!!!*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.header a:hover {
+  color: #083449;
+  border-bottom: 2px solid #083449;
+}
+
+.header.active a {
+  color: #083449;
+}
+
+.main {
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus  {
+  border-color: #083449;
+  outline: none;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+.form-group label {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #083449;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+a {
+  color: #083449;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #333;
+}
+/*FAQ PAGE*/
+  .faq {
+  margin: 20px;
+  background-color: none;
+  font-family:Trirong;
+  transition: 0.3s ease-out;
+   
+  font-weight: 700;
+  border-style: none;
+  }
+
+  .faq__question {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: 0.3s ease-out;
+  }
+
+  .faq__answer {
+    display: none;
+    margin-bottom: 10px;
+    transition: 0.3s ease-out;
+  }
+
+  .faq__answer.show {
+    display: block;
+  }
+/*HAMBURGER MENU START*/
+@media (max-width: 600px) {
+  body{
+    overflow: none;
+    margin-left: 20px;
+  }
+/*  HAMBURGER MENU*/
+  .toggle-menu-label {
+    display: block;
+    margin-right: 100px;
+  }
+  
+  .right-header {
+    display: none;
+  }
+  .toggle-menu{
+   display: none; 
+  }
+  .toggle-menu:checked ~ .right-header {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start of the column */
+    margin-top: 10px; /* Optional: Add some spacing between items */
+  }
+
+  .toggle-menu-label span {
+    display: block;
+  
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toggle-menu:checked + .toggle-menu-label span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .toggle-menu:checked + .toggle-menu-label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .toggle-menu:checked + .toggle-menu-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  .right-header a {
+    padding: 20px 40px; /* Adjust the vertical spacing of items */
+  }
+/*
+    #fotter-writeup{
+    color: darkgoldenrod;
+  }
+*/
+  footer{
+  background-color: #083449;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+  .ab-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+.how{
+  background-color: white;
+  color: black;
+  margin: 50px 0 0 0 ;
+  margin-left: 10px ;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:600px;
+  position: static;
+  box-shadow: 2px 2px 4px rgba(45,43,43,0.6);
+}
+  .how-it-works{
+    display: flex;
+    flex-direction: column;
+  }
+  .news-feed-card{
+    display: flex;
+    flex-direction: column;
+    position: static
+  }
+  .news-check{
+    width: 400px;
+  }
+  .news-sing-up{
+    padding-left: 40px;
+  }
+  .about{
+    width: 400px;
+  }
+/*HAMBURGER MENU END*/
+/*@media (max-width: 600px){*/
+  .hook{
+   font-size: 35px; 
+    margin:130px 0 0 40px;
+  }
+  #hook-sub{
+margin: 20px 0 0 40px;
+  }
+  .booking{
+  display: block;
+
+  width: 100%;
+  flex-direction: column;
+}
+ 
+  .ab-wrap{
+    margin-top: 700px;
+  }
+ 
+  
+  .how-it-works-img{
+    width: 100%;
+    margin-left: 0;
+  }
+ 
+
+
+/*ABOUT-US PAGE*/
+.hook-about{
+  padding-left: 20px;
+}
+.steps-img{
+  width: 100px;
+  height: 5px;
+  margin-left: -60px;
+  margin-right: 60px;
+  padding: 20px;
+}
+.steps{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+.steps-text{
+  margin-left: 0;
+  
+}
+}
